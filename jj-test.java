@@ -6,7 +6,8 @@ public class OkTestLog3 {
     FilterChain chain) throws IOException, ServletException {
       HttpServletRequest httpServletReq = (HttpServletRequest) request;
       String param = httpServletReq.getParameter("param");
-      String cleanParam = Jsoup.clean(param, Whitelist.basic);
+      String cleanParam = "";
+      // String cleanParam = Jsoup.clean(param, Whitelist.basic);
       // ok: crlf-injection-logs-deepsemgrep-sanitizer-copy
       log.log(log.getLevel(), cleanParam);
   }

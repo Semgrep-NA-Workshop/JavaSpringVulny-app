@@ -1,4 +1,4 @@
-Public class TestLog3 {
+public class TestLog3 {
   private final static Logger log = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
